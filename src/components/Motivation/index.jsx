@@ -15,9 +15,11 @@ const Motivation = () => {
     }, []);
     
     return (
-        <div className="motiv">
+        <div className="motiv p-3">
             <p>{quote}</p>
-            <button onClick={getQuote}>Refresh</button>
+            <div className="d-flex flex-row-reverse">
+                <button type="button" class="btn btn-outline-dark" onClick={getQuote}>Refresh</button>
+            </div>
         </div>
     )
 }
