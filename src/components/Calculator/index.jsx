@@ -49,8 +49,8 @@ const Calculator = () => {
     }
 
     return (
-        <div className="calc container py-3 p-2 mb-5">
-            <div className="row big-row p-2">
+        <div className="calc container p-2 mb-5">
+            <div className="row big-row py-3 p-2">
                 <div className="col-12 text-right">
                     {exp}
                 </div>
