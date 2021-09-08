@@ -1,9 +1,11 @@
 import './App.css';
 
+import Motivation from './components/Motivation';
+
 function App() {
   return (
-    <div className="App">
-      Hello World
+    <div className="app">
+      <Motivation />
     </div>
   );
 }
