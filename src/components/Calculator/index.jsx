@@ -11,7 +11,7 @@ const Calculator = () => {
         ['0', '', '=', '/'],
     ];
 
-    const [exp, setExp] = useState('');
+    const [exp, setExp] = useState('Type expression!');
     const [inpFl, setInpFl] = useState(true);
 
     const handleInput = (el) => {
@@ -33,23 +33,23 @@ const Calculator = () => {
     }
 
     return (
-        <div className="calc container">
-            <div className="row">
-                <div className="col-12">
+        <div className="calc container py-3 p-2 mb-5">
+            <div className="row big-row p-2">
+                <div className="col-12 text-right">
                     {exp}
                 </div>
             </div>
             {calcList.map((row, i) => (
                 <div key={i} className="row">
                     {row.map((el, j) => (
-                        <div key={j} className="col-3" onClick={() => handleInput(el)}>
+                        <div key={j} className="col-3 text-center py-4 p-3 calc-btn" onClick={() => handleInput(el)}>
                             {el}
                         </div>
                     ))}
                 </div>
             ))}
-            <div className="row">
-                <div className="col-12" onClick={() => setExp('')}>
+            <div className="row big-row">
+                <div className="col-12 text-center py-3 p-2 calc-btn" onClick={() => setExp('Type expression!')}>
                     Clear
                 </div>
             </div>
