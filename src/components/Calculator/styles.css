@@ -2,6 +2,8 @@
     min-width: 300px;
     width: 30vw;
     border: 2px solid black;
+    font-weight: bolder;
+    font-size: 1.15rem;
 }
 
 .calc-btn {
