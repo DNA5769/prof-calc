@@ -66,7 +66,10 @@ const Calculator = () => {
                 </div>
             ))}
             <div className="row big-row">
-                <div className="col-12 text-center py-3 p-2 calc-btn" onClick={() => setExp('Type expression!')}>
+                <div className="col-12 text-center py-3 p-2 calc-btn" onClick={() => {
+                    setExp('Type expression!');
+                    setInpFl(true);
+                }}>
                     Clear
                 </div>
             </div>
