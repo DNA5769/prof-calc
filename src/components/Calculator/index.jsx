@@ -36,7 +36,7 @@ const Calculator = () => {
             // so we set the flag to true
             setInpFl(true);
         }
-        else
+        else if (el !== '')
         {
             if (!inpFl)
                 setExp(exp+el);
